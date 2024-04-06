@@ -88,18 +88,18 @@ body {
   margin: .5em 0em;
   border-left: solid 2px red;
   color:red;
+  text-align: center;
 }
 
 .logo {
-  margin: 0px auto 0 0;
+  margin: 0 auto 0 0;
   align-content: center;
+  text-align: center;
 
   font-weight: bolder;
   background-color: red;
   color: white;
 }
-
-
 
 .items {
   display: flex;
@@ -124,15 +124,12 @@ body {
   .logo {
     min-width: 100%;
     min-height: 3em;
-    text-align: center;
   }
 
   .nav-link3 {
     flex-grow: 1;
-    text-align: center;
     margin: 0;
     line-height: 2.5em;
-    padding: auto;
   }
 
   .nav-link3:first-child {
