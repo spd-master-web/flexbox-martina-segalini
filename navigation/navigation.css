@@ -4,6 +4,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 
@@ -69,7 +70,7 @@ body {
   justify-content: center;
 
   margin: auto;
-  min-width: 50%;
+  min-width: 50em; /*50%;*/
 
   background-color: pink; 
   list-style:none;
@@ -79,10 +80,11 @@ body {
   display:flex;
   justify-content: center;
   min-height: 100vh;
+  min-width: 50em;
 }
 
 .nav-link3 {
-  padding: .5em;
+  padding: .5em 1em;
   margin: .5em 0em;
   border-left: solid 2px red;
   color:red;
@@ -97,6 +99,44 @@ body {
   color: white;
 }
 
-.navigation-3:first-child {
-  border-left: none;
+
+
+.items {
+  display: flex;
+}
+
+/* -- media -- */
+
+@media screen and (max-width: 50em) {
+
+  .navigation-3 {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto 0%;
+    min-width: 100%;
+  }
+
+  .wrapper-3 {
+    min-width: 100%;
+  }
+
+  .logo {
+    min-width: 100%;
+    min-height: 3em;
+    text-align: center;
+  }
+
+  .nav-link3 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    line-height: 2.5em;
+    padding: auto;
+  }
+
+  .nav-link3:first-child {
+    border-left: none;
+  }
+
 }
