@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  justify-content: space-evenly;
+}
+
+p, a {
+  font-size: small;
+}
+
+ul {
+
+}
+
+.wrapper {
+  display:flex;
+
+  width: 40em;
+  height: 35em;
+  margin: auto;
+  border: .1em dashed;
+  background-color: #eee;
+  color:black;
+  align-content: space-around;
+}
+
+/* -- layout 1 -- */
+
+.copy p {
+  padding: .5em;
+  background: rgb(220, 220, 220);
+}
+
+/* -- layout 3 -- */
+
+.pad {
+  padding: 1em;
+}
+
+.nav {
+  width: 22%;
+  background-color: lightgrey;
+}
+
+.main {
+  width: 56%;
+}
+
+.side {
+  width: 22%;
+  background-color: lightgrey;
+}
