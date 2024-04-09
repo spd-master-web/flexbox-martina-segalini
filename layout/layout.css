@@ -18,10 +18,6 @@ p, a {
   font-size: small;
 }
 
-ul {
-
-}
-
 .wrapper {
   display:flex;
 
@@ -36,10 +32,67 @@ ul {
 
 /* -- layout 1 -- */
 
-.copy p {
+.copy {
+  align-self:flex-end;
   padding: .5em;
   background: rgb(220, 220, 220);
 }
+
+/* -- layout 2 -- */
+
+.wrapper-2 {
+  display:flex;
+  flex-flow:column;
+  width: 40em;
+  height: 35em;
+  margin: auto;
+  border: .1em dashed;
+  background-color: #eee;
+  color:black;
+  align-content: space-around;
+}
+
+.header {
+  display:flex;
+  flex-flow: row;
+  width:100%;
+}
+
+.column {
+  display:flex;
+  flex-flow: row;
+  height:100%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  width:100%;
+  padding: 2em;
+
+  background-color: rgb(224, 224, 224); 
+  color: blue;
+}
+
+.nav-link3 {
+  padding: .5em 1em;
+  margin: .5em 0em;
+  border-left: solid 2px blue;
+  color:blue;
+  text-align: center;
+}
+
+.logo {
+  margin: 0 auto 0 0;
+  align-items: center;
+  text-align: center;
+
+  border-left: none;
+
+  font-weight: bolder;
+  color: blue;
+}
+
 
 /* -- layout 3 -- */
 
@@ -54,6 +107,7 @@ ul {
 
 .main {
   width: 56%;
+  height:100%;
 }
 
 .side {
